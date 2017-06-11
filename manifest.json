@@ -1,0 +1,26 @@
+{
+  "short_name": "स्वच्छ JECRC",
+  "name":"स्वच्छ JECRC",
+  "icons":[
+    {
+      "src":"assets/logo-280.png",
+      "sizes":"280x280",
+      "type":"image/png"
+    },
+    {
+      "src":"assets/logo-128.png",
+      "sizes":"128x128",
+      "type":"image/png"
+    },
+    {
+      "src":"assets/logo-64.png",
+      "sizes":"64x64",
+      "type":"image/png"
+    }
+  ],
+  "start_url":"index.html",
+  "display":"standalone",
+  "orientation":"portrait",
+  "theme_color": "#FFC107",
+  "background_color": "#fff"
+}
