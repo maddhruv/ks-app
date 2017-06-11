@@ -20,6 +20,8 @@ img#main-logo{
   font-family: 'Tillana', cursive;
   color: white;
   font-size: 64px;
+  margin: 0 auto;
+  line-height: 1.2em;
 }
 #wrapper>button{
   margin-top: 100px;
