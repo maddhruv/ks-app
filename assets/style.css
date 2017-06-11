@@ -1,6 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Tillana');
 body{
   padding: 0px;
   margin: 0px;
+  overflow: hidden;
+}
+#wrapper{
+  background: #FFC107;
+  display: block;
+  height: 100vh;
+  content: '';
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+img#main-logo{
+  margin: 0 auto;
+}
+#wrapper>span{
+  font-family: 'Tillana', cursive;
+  color: white;
+  font-size: 64px;
+}
+#wrapper>button{
+  margin-top: 100px;
+}
+.sub-page{
+  padding: 10px;
+}
+.sub-page>span{
+  color: #FFC107;
+  font-family: 'Tillana', cursive;
+  font-size: 32px;
+}
+.sub-page>h4{
+  color: #FFC107;
+  text-align: center;
+  font-weight: bold;
+}
+.sub-page>form{
+  margin-top: 50px
+}
+button.do{
+  margin: 0 auto;
+  margin-left: 36%;
 }
 header{
   color: #fff !important;

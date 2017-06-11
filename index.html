@@ -9,23 +9,84 @@
 
   </head>
   <body>
-
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">स्वच्छ JECRC</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">स्वच्छ JECRC</span>
+    <div id="wrapper">
+      <img src="assets/logo-280.png" id="main-logo"/><br>
+      <span>स्वच्छ</span><span>JECRC</span>
+      <button id="loginToggle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Log In
+      </button>
+      <button id="signupToggle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Sign Up
+      </button>
     </div>
-    <main class="mdl-layout__content">
-      <div class="page-content"><!-- Your content goes here --></div>
-    </main>
-  </div>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <div id="login-section" class="sub-page" style="display:none;">
+      <img src="assets/logo-64.png" class="sub-logo"/><span>स्वच्छ</span><span>JECRC</span>
+      <h4>Log In</h4>
+
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="username">
+          <label class="mdl-textfield__label" for="username">Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" id="password">
+          <label class="mdl-textfield__label" for="password">Password</label>
+        </div>
+        <button class="do mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          Log In
+        </button>
+      </form>
+    </div>
+
+    <div id="signup-section" class="sub-page" style="display:none;">
+      <img src="assets/logo-64.png" class="sub-logo"/><span>स्वच्छ</span><span>JECRC</span>
+      <h4>Sign Up</h4>
+
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="fname">
+          <label class="mdl-textfield__label" for="fname">Name</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="email" id="email">
+          <label class="mdl-textfield__label" for="email">E-mail</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" id="mobile">
+          <label class="mdl-textfield__label" for="mobile">Mobile No.</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="usernameS">
+          <label class="mdl-textfield__label" for="usernameS">Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" id="passwordS">
+          <label class="mdl-textfield__label" for="passwordS">Password</label>
+        </div>
+        <button class="do mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          Sign Up
+        </button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#loginToggle").on('click', function() {
+          $("#wrapper").hide();
+          $("#login-section").show();
+        });
+        $("#signupToggle").on('click', function() {
+          $("#wrapper").hide();
+          $("#signup-section").show();
+        });
+        $(".sub-logo").on('click', function() {
+          $("#signup-section").hide();
+          $("#login-section").hide();
+          $("#wrapper").show();
+        });
+      })
+    </script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
