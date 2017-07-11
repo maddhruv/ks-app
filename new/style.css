@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url("bg.jpg");
+  background-size: cover;
+}
+.navbar{
+  background: #92DEFE;
+  color: white;
+
+  box-shadow: 0px 3px #dedede;
+}
+#logo{
+  font-size: 30px;
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#main{
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.5);
+}
+form{
+  margin-top: 40px;
+}
+.status{
+  float: right;
+}
+.list-group-item{
+  margin-bottom: 15px;
+}
+.dev{
+  height: 150px;
+  width: 100%;
+  box-shadow: 3px 5px #dedede;
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button.action{
+  margin-right: 2px;
+}
+ol{
+  font-size: 24px;
+}
+.direct{
+  width: 100px;
+  height: 200px;
+  background: red;
+  padding: 40px;
+  margin: 10px;
+  margin-bottom: 40px;
+  border-radius: 5%;
+  text-decoration: none;
+}

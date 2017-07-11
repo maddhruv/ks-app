@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>स्वच्छ JECRC | Complaint Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><img src="logo.png" width="40px" height="40px"/></a></li>
+          <li><a href="index.html" id="logo">स्वच्छ JECRC</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="soch.html">SOCH</a></li>
+          <li class="active"><a href="complaint-form.html">Complaint Form</a></li>
+          <li><a href="complaint-status.html">Complaint Status</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="main">
+      <center>
+        <img src="map.jpg" height="400px">
+      </center>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="area" class="col-sm-2 control-label">Area</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="area">
+              <option>Campus</option>
+              <option>A-Block</option>
+              <option>B-Block</option>
+              <option>C-Block</option>
+              <option>Cafetaria</option>
+              <option>Boys Hostel-1</option>
+              <option>Boys Hostel-2</option>
+              <option>Girls Hostel</option>
+              <option>Others</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dustbin" class="col-sm-2 control-label">Dustbin No.</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="dustbin" placeholder="Dustbin No.">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dustbin-status" class="col-sm-2 control-label">Dustbin Status</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="dustbin-status" placeholder="Dustbin Status">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="issue" class="col-sm-2 control-label">Issue Regarding Cleanliness</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="area">
+              <option>Area-A - A-Block & Cafeteria</option>
+              <option>Area-B - Central Lawn & B-Block Front</option>
+              <option>Area-C - Boys Hostel 1 & 2</option>
+              <option>Area-D - Girls Hostel Lawn & Behind B-Block</option>
+              <option>Area-E - Geeks & Guttons</option>
+              <option>Area-F - C Block & Parking</option>
+              <option>Area-G - Inside A-Block</option>
+              <option>Area-H - Inside B-Block</option>
+              <option>Area-I - Inside C-Block</option>
+              <option>Area-J - Cafe</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="other" class="col-sm-2 control-label">Other</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="other" placeholder="Any other issues...">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Complaint</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

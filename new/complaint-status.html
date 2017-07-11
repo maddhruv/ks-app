@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>स्वच्छ JECRC | Complaint Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><img src="logo.png" width="40px" height="40px"/></a></li>
+          <li><a href="index.html" id="logo">स्वच्छ JECRC</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="soch.html">SOCH</a></li>
+          <li><a href="complaint-form.html">Complaint Form</a></li>
+          <li class="active"><a href="complaint-status.html">Complaint Status</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="main">
+      <ul class="list-group">
+        <!--item status-->
+        <li class="list-group-item list-group-item-success">
+          Your Complaint  <span class="badge">123</span><br>
+          <div class="row">
+            <div class="col-md-6">
+              Area: "A-Block"
+            </div>
+            <div class="col-md-6">
+              Dustbin No. 69
+            </div>
+            <div class="col-md-12">
+              Issues - "Lorem Ipsum palaana dimkaaa"
+            </div>
+          </div>
+          <hr>
+          has been <button class="btn btn-primary"><span class="badge status">Resolved</span></button>
+        </li>
+        <!--item status-->
+        <li class="list-group-item list-group-item-danger">
+          Your Complaint  <span class="badge">123</span>
+          <div class="row">
+            <div class="col-md-6">
+              Area: "A-Block"
+            </div>
+            <div class="col-md-6">
+              Dustbin No. 69
+            </div>
+            <div class="col-md-12">
+              Issues - "Lorem Ipsum palaana dimkaaa"
+            </div>
+          </div>
+          <hr>
+          has been <button class="btn btn-primary"><span class="badge status">Un-Resolved</span></button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
